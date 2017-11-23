@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body {
+	font-family: sans-serif;
+}
+h1 {
+	font-size: 21px;
+}
+h2 {
+	font-size: 18px;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.info {
+	list-style-type: none;
+}
+.profile {
+	padding: 16px;
+	border: 1px solid #095cdc;
+}
+.profile h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}

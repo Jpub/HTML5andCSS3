@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>라디오 버튼과 체크 박스</title>
+<style>
+body {
+	margin: 0;
+}
+form {
+	padding: 16px;
+}
+.label-p {
+	margin-bottom: 0;
+}
+.input-group {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+</style>
+</head>
+<body>
+<form action="#">
+	<p class="label-p">시간 설정</p>
+	<!-- 라디오 버튼 -->
+	<ul class="input-group">
+		<li>
+			<input type="radio" name="duration" id="r1" value="1" checked><label for="r1">바로 출발</label>
+		</li>
+		<li>
+			<input type="radio" name="duration" id="r2" value="2"><label for="r2">출발 시간</label>
+		</li>
+		<li>
+			<input type="radio" name="duration" id="r3" value="3"><label for="r3">도착 시간</label>
+		</li>
+	</ul>
+	<p class="label-p">옵션</p>
+	<!-- 체크 박스 -->
+	<ul class="input-group">
+		<li>
+			<input type="checkbox" name="option" id="c1" value="1" checked><label for="c1">직행 우선</label>
+		</li>
+		<li>
+			<input type="checkbox" name="option" id="c2" value="2" checked><label for="c2">고속 철도 우선</label>
+		</li>
+		<li>
+			<input type="checkbox" name="option" id="c3" value="3"><label for="c3">버스가 있으면 이용</label>
+		</li>
+	</ul>
+</form>
+</body>
+</html>

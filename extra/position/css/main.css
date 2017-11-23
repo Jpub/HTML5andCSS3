@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+/* ========== 모두 공통 ========== */
+html, body {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #393939;
+	background: #efefef;
+}
+body, div, p, h1, h2, h3, h4, ul, figure {
+	margin: 0;
+	padding: 0;
+}
+p, td, th, li {
+	line-height: 1.8;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+a {
+	color: #709a00;
+}
+a:hover {
+	color: #95cd00;
+}
+a:active {
+	color: #4b6700;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/* 공통 제목 */
+main h1 {
+	margin-bottom: 1rem;
+	border-bottom: 1px dashed #c84040;
+	font-weight: normal;
+	font-size: 1.6rem;
+}
+
+.container {
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 1000px;
+}
+@media screen and (min-width: 768px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/* ========== 헤더 ========== */
+header {
+	background: #c84040;
+}
+.header-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-logo {
+	padding: 10px 0;
+	width: 160px;
+	height: 37px;
+}
+.menu-btn {
+	padding: 10px 0;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	width: 40px;
+	height: 40px;
+	background: url(../images/hamburger.png) no-repeat center center;
+	background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+	.header-logo {
+		width: 200px;
+		height: 46px;
+	}
+	.header-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.header-logo {
+		padding: 20px 0;
+	}
+	.menu-btn {
+		display: none;
+	}
+}
+
+/* ========== 내비게이션 ========== */
+nav {
+	background: #393939;
+}
+.navbar {
+	display: none;
+	list-style-type: none;
+}
+.navbar a {
+	display: block;
+	padding: 0.6rem 0;
+	color: #fff;
+	text-decoration: none;
+}
+.navbar a:hover {
+	background: #c84040;
+}
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		display: flex !important;
+	}
+	.navbar li {
+		flex: 1 1 auto;
+		text-align: center;
+	}
+	.navbar a.nav-current {
+		background: #c84040;
+	}
+}
+
+/* ========== 헤더를 상단에 고정 ========== */
+@media screen and (min-width: 768px) {
+	.position-lock {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	header {
+		width: 100%;
+		height: 86px;
+	}
+	nav {
+		width: 100%;
+		height: 47px;
+	}
+	.main,
+	.home-keyvisual {
+		margin-top: 133px;
+	}
+}
+
+/* ==========  메인 영역의 기본 레이아웃 ========== */
+main {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #efefef;
+}
+
+@media screen and (min-width: 767px) {
+	main {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+/* ========== フッター ========== */
+footer {
+	background: #c84040;
+	font-size: 0.9rem;
+	color: #fff;
+}
+.footer-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.footer-nav {
+	list-style-type: none;
+}
+.footer-nav li {
+	display: inline;
+	padding: 0 1rem 0 0;
+}
+.footer-nav a {
+	color: #fff;
+	text-decoration: none;
+}
+.footer-nav a:hover {
+	opacity: 0.5;
+}
+
+/* ========== index 홈페이지 ========== */
+
+/* キャッチコピー */
+.home-maincopy {
+	text-align: center;
+	font-size: 1.4rem;
+}
+.home-maincopy strong {
+	color: #c84040;
+}
+
+@media screen and (min-width: 768px) {
+	.home-maincopy {
+		font-size: 2.4rem;
+	}
+}
+
+.home-color1 {
+	color: #f8b173;
+}
+.home-color2 {
+	color: #74b9d9;
+}
+.home-color3 {
+	color: #8bca85;
+}
+.home-color4 {
+	color: #f8817e;
+}
+
+/* 見出し */
+.home-h2 {
+	padding-bottom: 5px;
+	margin: 30px 0 10px 0;
+	color: #c84040;
+	border-bottom: 1px dashed #c84040;
+	font-size: 1.3rem;
+}
+
+/* 뉴스 */
+.home-news {
+	padding: 30px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+/* 코스 */
+.home-course {
+	display: flex;
+	flex-flow: column;
+}
+.home-course li {
+	flex: 1 1 auto;
+	margin: 0 2px 4px 2px;
+	border: solid 5px #fff;
+	list-style-type: none;
+	background: #fff;
+}
+
+
+/* 画面幅が広い（タブレット・パソコン向け） */
+@media screen and (min-width: 768px) {
+	.home-course {
+		flex-flow: row;
+	}
+}
+
+.home-course a {
+	color: #393939;
+	text-decoration: none;
+}
+
+.home-course figure:hover {
+	opacity: 0.5;
+}
+
+.home-course figcaption {
+	padding: 15px 0;
+	font-size: 0.9rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* ========== course コース紹介 ========== */
+/* コース概要 */
+.course-container {
+	display: flex;
+	flex-flow: column;
+}
+
+@media screen and (min-width: 768px) {
+	.course-container {
+		flex-flow: row;
+	}
+	.course-image {
+		flex: 1 1 400px;    
+		margin-right: 20px;
+	}
+	.course-text {
+		flex: 1 1 580px;
+	}
+}
+
+.course-image img {
+	border-radius: 10px;
+}
+.course-h2 {
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}
+.course-spec {
+	list-style-type: none;
+}
+.course-label {
+	display: inline-block;
+	padding: 0.1rem 0.5rem;
+	margin-right: 0.1rem;
+	border-radius: 3px;
+	background: #c84040;
+	font-size: 0.7rem;
+	color: #fff;
+}
+
+/* コース説明 */
+.course-h3 {
+	margin: 30px 0 10px 0;
+	color: #c84040;
+	border-bottom: 1px dashed #c84040;
+	font-size: 1.3rem;
+}
+.course-description {
+	margin-top: 30px;
+	padding: 30px;
+	background: #fff url(../images/point.png) no-repeat;
+	background-size: 50px 50px;
+	border-radius: 10px;
+}
+
+/* スケジュール（テーブル） */
+.course-schedule {
+	border-collapse: collapse;
+}
+.course-schedule td, .course-schedule th {
+	padding: 0.5em 1em;
+	border-bottom: 1px dotted #aeaeae;
+}
+
+/* 講師プロフィール */
+.course-instructor {
+	overflow: hidden;
+}
+.course-instructor img {
+	float: left;
+	margin-right: 20px;
+	border-radius: 50%;
+	width: 20%;
+}
+.course-instructor-name {
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 1rem 0 0.5rem 0;
+}
+
+
+/* お申込みボタン */
+.course-button {
+	display: block;
+	width: 300px;
+	margin: 30px auto;
+	padding: 1rem 0;
+	background-color: #709a00;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2rem;
+}
+.course-button:hover {
+	background-color: #95cd00;
+	color: #fff;
+}
+
+/* ========== qanda よくある質問 ========== */
+.q-and-a {
+	margin-top: 1em;
+	padding: 8px 0 0 60px;
+}
+.question {
+	font-weight: bold;
+	color: #6eba44;
+	background: url(../images/q.png) no-repeat;
+	background-size: 40px 40px;
+}
+.answer {
+	margin-bottom: 2em;
+	background: url(../images/a.png) no-repeat;
+	background-size: 40px 40px;
+}
+
+
+/* ========== contact お申し込み ========== */
+.contact {
+	padding: 20px;
+	background: #fff;
+	border-radius: 10px;
+}
+.contact p {
+	margin-bottom: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+}
+textarea {
+	height: 200px;
+	border: 1px solid #ccc;
+}
+
+@media screen and (min-width: 768px) {
+	input[type="text"],
+	input[type="email"] {
+		width: 50%;
+	}	
+}
+
+/* お申込みボタン */
+input[type="submit"] {
+	width: 300px;
+	padding: 8px 0;
+	background-color: #709a00;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2rem;
+}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+.container {
+	margin: 0 auto 0 auto;
+	max-width: 980px;
+}
+
+/* わかりやすくするために適用しているCSS */
+header {
+	border: 1px solid black;
+	min-height: 100px;
+}
+.wrapper {
+	border: 1px solid black;
+	min-height: 300px;
+}
+footer {
+	border: 1px solid black;
+	min-height: 100px;
+}
+.container {
+	border: 1px solid black;
+}

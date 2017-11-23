@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+.container {
+	margin: 0 auto 0 auto;
+	max-width: 1000px;
+}
+section .container {
+	display: flex;
+	flex-flow: column;
+}
+
+/* 
+ 각 파트에 패딩, 배경, 텍스트 색 등을 지정한다
+<div class="container">의 자식 요소에 지정한다
+*/
+.header-inner {
+	padding: 10px 10px 0 10px;
+	background: #bad7f5;
+}
+main {
+	padding: 20px 10px 20px 10px;
+	background: #fffde3;
+
+	/* 
+	 레이아웃을 이해하기 쉽도록 높이를 설정.
+	 일반 웹디자인에선 높이를 지정하지 않는다.
+	*/
+	height: 400px;
+}
+.sidebar {
+	padding: 20px 10px 20px 10px;
+	background: #c0f5b9;
+}
+.footer-inner {
+	padding: 20px 16px 10px 16px;
+	background: #bad7f5;
+}
+
+/* 헤더 부분 */
+.hamburger {
+	border: none;
+	width: 50px;
+	height: 50px;
+	background: url(../../images/hamburger.png) no-repeat;
+	background-size: contain;
+}
+
+/* 내비게이션 */
+.navbar {
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background: #565656;
+}
+.navbar li a {
+	display: block;
+	padding: 10px 8px;
+	color: #fff;
+	text-decoration: none;
+}
+.navbar li a:hover {
+	background: #fff;
+	color: #565656;
+}
+
+@media only screen and (min-width: 768px) {
+	section .container {
+		flex-flow: row;
+	}
+	main {
+		flex: 1 1 auto;
+	}
+	.sidebar {
+		flex: 0 0 340px;
+	}
+
+	/* 내비게이션 */
+	.hamburger {
+		display: none;
+	}
+	.navbar {
+		display: flex !important;
+	}
+	.navbar li:first-child { 
+		margin-right: auto;
+	}
+}
+
+/* 구조를 알기 쉽도록 하는 CSS */
+body {
+	color: #444;
+}
+h1 {
+	margin: 0;
+}
+main p:last-child {
+	margin-bottom: 0;
+}
+.main-title {
+	margin: 0;
+}
+.copyright {
+	margin: 0;
+}

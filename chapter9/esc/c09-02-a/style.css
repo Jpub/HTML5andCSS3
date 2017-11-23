@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+.container {
+	margin: 0 auto 0 auto;
+	/* padding: 0 16px 0 16px; */
+	max-width: 1000px;
+}
+main .container {
+	/* padding: 16px 0 0 16px; */
+}
+.sidebar {
+	/* padding: 0 8px 0 8px; */
+}
+footer .container {
+	padding-top: 30px;
+}
+
+@media only screen and (min-width: 769px) {
+	main .container {
+		overflow: hidden;
+	}
+	.main {
+		float: left;
+		width: 100%;
+		margin-right: -340px; /* サイドバーの幅マイナス */
+	}
+	.main-inner {
+		margin-right: 340px; /* サイドバーの幅 */
+	}
+	.sidebar {
+		float: right;
+		width: 340px; /* サイドバーの幅 */
+	}
+	footer .container {
+		padding-top: 30px;
+	}	
+}
+
+/* わかりやすくするために適用しているCSS */
+body {
+	background: #ddd;
+	color: #444;
+}
+header .container,
+footer .container {
+	background: #bad7f5;
+}
+main .container {
+	background: #feffe1;
+}
+.sidebar {
+	background: #E9FDDB;
+}
+h1 {
+	margin: 0;
+}
+main p:last-child {
+	margin-bottom: 0;
+}
+.main-title {
+	margin: 0;
+}
+.copyright {
+	margin: 0;
+}

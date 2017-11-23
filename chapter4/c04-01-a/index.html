@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>em를 사용한 예</title>
+<style>
+body {
+	font-size: 1em;
+}
+div {
+	font-size: 0.8em;
+}
+</style>
+</head>
+<body>
+body 폰크 크기(1em = 16px)
+<div>
+	body->div의 폰크 크기(16px을 상속한 폰트 크기의 0.8em=약 13px)
+	<div>
+		body-> div->div의 폰트 크기(13px을 상속한 폰트 크기의 0.8em = 약 10px)
+	</div>
+</div>
+</body>
+</html>

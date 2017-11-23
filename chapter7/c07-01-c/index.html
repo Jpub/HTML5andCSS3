@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>셀을 가로 방향으로 결합하기</title>
+<style>
+table {
+	border-collapse: collapse;
+}
+.checkout th,
+.checkout td {
+	padding: 8px;
+}
+.checkout th {
+	font-weight: normal;
+	color: #008cca;
+}
+.checkout th.item {
+	text-align: left;
+}
+.checkout .qty {
+	text-align: center;
+}
+.checkout .price {
+	text-align: right;
+}
+.checkout .total {
+	border-top: 1px solid #8fbac8;
+}
+</style>
+</head>
+<body>
+<table class="checkout">
+<tr>
+	<th class="item">품명</th>
+	<th class="qty">수량</th>
+	<th class="price">소계(세금 포함)</th>
+</tr>
+<tr>
+	<td class="item">발표용 레이저 포인터</td>
+	<td class="qty">1</td>
+	<td class="price">&#8361;7,560-</td>
+</tr>
+<tr>
+	<td class="item">HDMI 연결 케이블</td>
+	<td class="qty">1</td>
+	<td class="price">&#8361;3,024-</td>
+</tr>
+<tr class="total">
+	<td colspan="2">합계</td>
+	<td class="price">&#8361;10,584-</td>
+</tr>
+</table>
+</body>
+</html>

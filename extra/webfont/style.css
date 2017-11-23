@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+body {
+	background: black;
+}
+mark {
+	background: #f0ff00;
+}
+
+.heading {
+	margin: 0;
+	padding: 0;
+	font-size: 62px;
+	line-height: 1.6;
+	font-family: 'Oswald', sans-serif;
+}

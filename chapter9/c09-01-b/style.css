@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+
+/* 
+각 파트에 패딩, 배경, 텍스트 색 등을 지정한다
+<div class="container">의 자식 요소에 지정한다
+*/
+.header-inner {
+	background: #bad7f5;
+}
+.nav-inner {
+	color: #fff;
+	background: #0086f9;
+}
+.main-inner {
+	background: #fffde3;
+
+	/* 
+	 레이아웃을 이해하기 쉽도록 높이를 설정.
+	 일반 웹디자인에선 높이를 지정하지 않는다.
+	*/
+	height: 400px;
+}
+.sidebar-inner {
+	background: #c0f5b9;
+}
+.footer-inner {
+	background: #bad7f5;
+}
+
+/* 구조를 알기 쉽도록 하는 CSS */
+body {
+	color: #444;
+}
+main p:last-child {
+	margin-bottom: 0;
+}
+.main-title {
+	margin: 0;
+}
+.copyright {
+	margin: 0;
+}

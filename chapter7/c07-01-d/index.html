@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>셀을 세로 방향으로 병합하기</title>
+<style>
+table {
+	border-collapse: collapse;
+}
+.plan th,
+.plan td {
+	border: 1px solid #93C8E2;
+	padding: 4px;
+	font-weight: normal;
+}
+.plan th {
+	color: #fff;
+	background: #0092e3;
+}
+.meal {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<table class="plan">
+<tr>
+	<th rowspan="2">패키지명</th>
+	<th rowspan="2">내용</th>
+	<th colspan="3">식사</th></tr>
+<tr>
+	<th>아침</th>
+	<th>점심</th>
+	<th>저녁</th>
+</tr>
+<tr>
+	<td>자유 여행1</td>
+	<td>기차 티켓, 차량 렌트, 숙박 시설</td>
+	<td class="meal">●</td>
+	<td class="meal"></td>
+	<td class="meal"></td>
+</tr>
+<tr><td>자유 여행2</td><td>기차 티켓, 버스 티켓, 숙박 시설, 입장권</td><td class="meal">●</td><td class="meal"></td><td class="meal">●</td></tr>
+</table>
+</body>
+</html>

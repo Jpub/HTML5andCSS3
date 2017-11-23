@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>제목 셀과 일반 셀 연동시키기(headers 속성)</title>
+<style>
+table {
+	border-collapse: collapse;
+}
+caption {
+	color: #008cca;
+}
+th, td {
+	border: 1px solid #8fbac8;
+	padding: 8px;
+}
+th {
+	color: #fff;
+	background: #008cca;
+}
+</style>
+</head>
+<body>
+<table>
+	<caption>호텔 예약 상황</caption>
+	<tr>
+		<th id="row1">숙박 시설</th>
+		<th id="row2">6일</th>
+		<th id="row3">7일</th>
+		<th id="row4">8일</th>
+	</tr>
+	<tr>
+		<td headers="row1">그랜드 호텔</td>
+		<td headers="row2">○</td>
+		<td headers="row3">○</td>
+		<td headers="row4">×</td>
+	</tr>
+	<tr>
+		<td headers="row1">청룡 여관</td>
+		<td headers="row2">○</td>
+		<td headers="row3">○</td>
+		<td headers="row4">△</td>
+	</tr>
+	<tr>
+		<td headers="row1">파크 호텔</td>
+		<td headers="row2">△</td>
+		<td headers="row3">×</td>
+		<td headers="row4">×</td>
+	</tr>
+</table>
+</body>
+</html>

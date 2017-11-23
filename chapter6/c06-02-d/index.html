@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>탐색 경로 목록 작성하기</title>
+<style>
+.breadcrumb ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.breadcrumb li {
+	display: inline;
+}
+.breadcrumb li::after {
+	content: "»";
+	color: #999;
+}
+.breadcrumb li:last-child::after {
+	content: none;
+}
+.breadcrumb a {
+	text-decoration: none;
+	color: #1864b9;
+}
+</style>
+</head>
+<body>
+<div class="breadcrumb">
+	<ol>
+		<li><a href="/">홈</a></li>
+		<li><a href="/products/">제품 목록</a></li>
+		<li><a href="/products/lens/">카메라 렌즈</a></li>
+		<li>광각 렌즈</li>
+	</ol>
+</div>
+</body>
+</html>

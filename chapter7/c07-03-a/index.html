@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>홀수 행, 짝수 애에 다른 배경색 사용하기</title>
+<style>
+table {
+	border-collapse: collapse;
+}
+.price caption {
+	color: #1f8ef5;
+}
+.price th, td {
+	border: 1px solid #e3ecf5;
+	padding: 8px;
+}
+.price th {
+	border: 1px solid #e3ecf5;
+	color: #fff;
+	background: #1f8ef5;
+}
+.price tr:nth-child(odd) {
+	background: #e3ecf5;
+}
+</style>
+</head>
+<body>
+<table class="price">
+<caption>기본 요금(1시간)</caption>
+<tr>
+	<th>룸 이름</th><th>평일</th><th>주말/공휴일</th><th>개인 연습</th>
+</tr>
+<tr>
+	<td>8평</td><td>&#8361;1,080</td><td>&#8361;2,160</td><td>&#8361;540</td>
+</tr>
+<tr>
+	<td>12평East</td><td>&#8361;1,620</td><td>&#8361;3,240</td><td>&#8361;810</td>
+</tr>
+<tr>
+	<td>12평West</td><td>&#8361;1,620</td><td>&#8361;3,240</td><td>&#8361;810</td>
+</tr>
+<tr>
+	<td>16평</td><td>&#8361;2,160</td><td>&#8361;4,320</td><td>&#8361;1,080</td>
+</tr>
+<tr>
+	<td>20평</td><td>&#8361;2,700</td><td>&#8361;5,832</td><td>&#8361;1,350</td>
+</tr>
+<tr>
+	<td>30평</td><td>&#8361;4,050</td><td>&#8361;8,100</td><td>&#8361;2,025</td>
+</tr>
+</table>
+</body>
+</html>

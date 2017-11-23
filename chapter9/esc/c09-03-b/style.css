@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+
+.container {
+	overflow: hidden;
+	margin: 0 auto 0 auto;
+	max-width: 980px;
+}
+.container.flex {
+	display: flex;
+	flex-flow: column;
+}
+.main {
+	flex: 1 1 0;
+	order: 1;
+}
+.sub1 {
+	flex: 1 1 0;
+	order: 2;
+}
+.sub2 {
+	flex: 1 1 0;
+	order: 3;
+}
+
+
+@media only screen and (min-width: 769px) {
+	.container {
+		overflow: hidden;
+		margin: 0 auto 0 auto;
+		max-width: 980px;
+	}
+	.container.flex {
+		display: flex;
+		flex-flow: row;
+	}
+	.sub1 {
+		flex: 0 0 200px;
+		order: 1;
+	}
+	.main {
+		flex: 1 1 556px;
+		order: 2;
+	}
+	.sub2 {
+		flex: 0 0 200px;
+		order: 3;
+	}	
+}
+
+
+/* わかりやすくするために適用しているCSS */
+header {
+	border: 1px solid black;
+	min-height: 100px;
+}
+.wrapper {
+	border: 1px solid black;
+}
+.main {
+	border: 1px solid black;
+	min-height: 300px;
+}
+.sub1,
+.sub2 {
+	border: 1px solid black;
+	min-height: 300px;
+}
+footer {
+	border: 1px solid black;
+	min-height: 100px;
+}
+.container {
+	border: 1px solid black;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>텍스트 필드에 CSS 적용하기</title>
+<style>
+body {
+	margin: 0;
+}
+form {
+	padding: 16px;
+}
+input {
+	box-sizing: border-box;
+}
+input[type="text"] {
+	margin: 0.5em 0;
+	border: 1px solid #ccc;
+	padding: 0.75em;
+	width: 100%;
+	font-size: 16px;
+	color: #999;
+	border-radius: 6px;
+}
+input[type="text"]:focus {
+	background-color: #e2ecf6;
+}
+</style>
+</head>
+<body>
+<form action="#">
+	<p><label for="name-field">이름</label><br>
+	<input type="text" name="name" id="name-field" required></p>
+</form>
+</body>
+</html>

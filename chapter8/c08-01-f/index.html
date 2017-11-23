@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>텍스트 필드와 비슷한 다른 용도의 폼부품</title>
+<style>
+body {
+	margin: 0;
+}
+.required {
+	padding: 0.5em;
+	font-size: 0.75em;
+	color: #ff0000;
+}
+form {
+	padding: 16px;
+}
+input {
+	box-sizing: border-box;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"] {
+	margin: 0.5em 0;
+	border: 1px solid #ccc;
+	padding: 0.75em;
+	width: 100%;
+	font-size: 16px;
+	color: #999;
+	outline: none;
+	border-radius: 6px;
+}
+input[type="text"]:focus {
+	/* ここにbackground-color */
+}
+input[type="number"] {
+	margin-right: 0.5em;
+	width: auto;
+}
+</style>
+</head>
+<body>
+<form action="#">
+	<p><label for="pw-field">패스워드</label><br>
+	<input type="password" name="pw" id="pw-field"></p>
+	<p><label for="email-field">이메일</label><br>
+	<input type="email" name="email" id="email-field"></p>
+	<p><label for="tel-field">전화번호</label><br>
+	<input type="tel" name="tel" id="tel-field"></p>
+	<p><label for="number-field">목표 횟수</label><br>
+	<input type="number" name="number" id="number-field">회</p>
+</form>
+</body>
+</html>

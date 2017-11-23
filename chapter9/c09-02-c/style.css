@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+.container {
+	margin: 0 auto 0 auto;
+	max-width: 1000px;
+}
+section .container {
+	display: flex;
+	flex-flow: column;
+}
+
+/* 
+ 각 파트에 패딩, 배경, 텍스트 색 등을 지정한다
+*/
+.header-inner {
+	padding: 10px 10px 0 10px;
+	background: #bad7f5;
+}
+.nav-inner {
+	padding: 10px 10px 0 10px;
+	color: #fff;
+	background: #0086f9;
+}
+main {
+	padding: 20px 10px 20px 10px;
+	background: #fffde3;
+
+	/* 
+	 レイアウトのイメージをしやすいように高さを設定。
+	 通常のwebデザインではレイアウトで高さを指定しない
+	*/
+	height: 400px;
+}
+.sidebar {
+	padding: 20px 10px 20px 10px;
+	background: #c0f5b9;
+}
+.footer-inner {
+	padding: 20px 16px 10px 16px;
+	background: #bad7f5;
+}
+
+@media only screen and (min-width: 768px) {
+	section .container {
+		flex-flow: row;
+	}
+	main {
+		flex: 1 1 auto;
+		order: 2; /* order로 나열 순서를 설정 */
+	}
+	.sidebar1 {
+		flex: 0 0 200px;
+		order: 1; /* order로 나열 순서를 설정  */
+	}
+	.sidebar2 {
+		flex: 0 0 250px;
+		order: 3; /* order로 나열 순서를 설정  */
+	}
+}
+
+/* 구조를 알기 쉽도록 하는 CSS */
+body {
+	color: #444;
+}
+h1 {
+	margin: 0;
+}
+main p:last-child {
+	margin-bottom: 0;
+}
+.main-title {
+	margin: 0;
+}
+.copyright {
+	margin: 0;
+}
