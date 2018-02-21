@@ -15,4 +15,4 @@
 **시리즈** First Step 시리즈 04  
 **ISBN** 979-11-88621-04-0 (93000)  
 
-[### 도서 소개 페이지 바로 가기 ###](http://jpub.tistory.com/741)
+[### 도서 소개 페이지 바로 가기 ###](http://jpub.tistory.com/747?category=208491)
